@@ -170,6 +170,10 @@ p {
   line-height: 2;
 }
 
+ul  {
+  list-style: none;
+}
+
 .content {
   padding: 50px 2% 250px;
 }
@@ -183,7 +187,6 @@ p {
   text-align: center;
   color: #fff;
   padding-top: 110px;
-  /* min-height: 800px; */
   height: 100vh;
   width: 100vw;
   letter-spacing: 2px;
@@ -259,8 +262,7 @@ p {
 }
 
 .section1  {
-  /* background-color: rgba(255, 255, 255, 0.93); */
-  height: 700px;
+  height: auto;
   
 }
 
@@ -292,10 +294,6 @@ p {
 /* -_-_-_-_-_-_-_-_-_SKILLS PAGE SETTINGS_-_-_-_-_-_-_-_- */
 
 .skillsmaincontainer  {
-  background: linear-gradient(rgba(194, 79, 3, 0.94), rgba(0, 0, 0, 0.5)), url(../assets/service.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   height: auto;
   width: 100vw;
   opacity: 0.9;
@@ -307,7 +305,7 @@ p {
     display: flex;
     flex-direction: column;
   }
-
+  
 }  
 
 .skillscontainer  {
@@ -315,7 +313,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: pink; */
 }
 
 .myskillscontainer  {
@@ -325,7 +322,6 @@ p {
 }
 
 .toolscontainer  {
-  /* background-color: lightseagreen; */
   display: flex;
   flex: 2;
   flex-direction: column; 
@@ -356,47 +352,130 @@ p {
   
 }
 
-.checks  {
-  height: auto;
-  width: 5vw;
-}
 
-.box1  {
-  color: #f2f2f2;  
-  width: 20vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;       
-  align-content: center;
-}
 
-.box {
-  color: #f2f2f2;
-  width: 6vw;
-  height: 10vh;
-  margin: 1%;
-  text-align: center; 
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;       
-  align-content: center;
-}
 
-.skillicons  {
-  height: auto;
-  width: 55px;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.skillicons:hover {
-  filter: grayscale(0%);
-}
 
 
 /* ------------------------MY WORK SETTINGS------------------------ */
+
+.skills-section  {
+  background: url(../assets/service.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-height: 950px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.skills-wrapper  {
+  padding: 100px;
+}
+
+
+.skills-flex-wrapper  {
+  display: flex;
+  font: 100 30px;
+  height: 17em;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.flex-item  {
+  flex: 0 0 auto;
+  min-height: 200px;
+  background: 0 0;
+  padding: 15px;
+}
+
+.flex-item:nth-child(1) {
+  width: 65%;
+  max-width: 470px;
+  min-height: 450px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .flex-item:nth-child(1) {
+    width: 45%;
+  }
+
+}
+
+.skills-heading  {
+  font-family: Gotham,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+.sprite  {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.dev  {
+  background-image: url(../assets/settings.png);  
+
+}
+
+.repair {
+  background-image: url(../assets/repair.png);  
+  
+}
+
+.dev-item  {
+  display: inline-block;
+  border: 2px solid rgba(194, 79, 3, 0.94);
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 7;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .dev-item {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+    line-height: 5.5;
+    margin: 5px 5px 5px 0;
+  }
+}
+
+.list  {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.list-item  {
+  margin: 10px 0;
+  font-size: 20px;
+  padding: 5%;
+}
+
+.item-svg  {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  
+}
+
 
 .sec03  {
   width: 30vw;  
@@ -454,9 +533,7 @@ p {
 }
 
 .workMainContainer  {
-  /* margin: 2%; */
   padding: 2%;
-  /* background-color: silver; */
 }
 
 .workpic  {
@@ -532,6 +609,8 @@ p {
 .contactheading  {
   font-size: 3em;
   background: linear-gradient(rgba(194, 79, 3, 0.94), rgba(0, 0, 0, 0.5));
+  text-align: center;
+  margin-top: 0;
   
 }
 
