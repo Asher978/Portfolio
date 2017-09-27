@@ -19,7 +19,7 @@ $(window).scroll(function() {
   });
   $('.main_h li a').click(function() {
       if ($('.main_h').hasClass('open-nav')) {
-        //   $('.navigation').removeClass('open-nav');
+          $('.navigation').removeClass('open-nav');
           $('.main_h').removeClass('open-nav');
       }
   });
