@@ -2,6 +2,6 @@
 
 #### Techs Used
 
-  -[x] HTML5
-  -[x] JavaScript
-  -[x] CSS
+  - [x] HTML5
+  - [x] JavaScript
+  - [x] CSS
