@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -35,15 +36,13 @@
                 </nav>
             </div> <!-- navbar div -->
         </header>
-      
         <div class="hero">
             <h1><span>Asher Shaheen</span><br>Full Stack Web Developer</h1>
             <a href="#me"><div class="mouse">
                 <span></span>
             </div></a>
         </div>
-
-        <div class="row content section1" id="me">
+        <div class="content section1" id="me">
             <h1 class="sec01">Hey, I'm Ash..</h1>
             <img src="./assets/mypic.jpeg" alt="Asher" class="mypic">
             <h3>I'm a functionality-minded, detail oriented software engineer passionate about combining beautiful code with innovative thinking.</h3>
@@ -97,7 +96,7 @@
         
         <div class="center">
             <h1 class="contactheading">Some of My Work</h1>
-            <hr>
+            <span class="divider center"></span>            
             <div class="workMainContainer">
                 <div class="screenshotsContainer">
                     <img class="workpic" src="./assets/eric2.png" alt="">
@@ -113,7 +112,7 @@
                 </div>
                 <p class="workcontent">App On My Feet is desgined to help and support the runners from <a href="https://nyc.backonmyfeet.org" target="blank">BACK ON MY FEET</a>. A non-profit running organization that helps restore confidence and self esteem amongst the homeless and uses running as a cataylst. The main idea of this App is to help the program manager as well as the members to log and track the progress on their weekly runs, miles covered and the areas they ran in. Stack used (EJS, JS, Node/Express, PSQL, Google Geocoding API, Leaflet Library for Map markers)</p>
             </div>
-            <hr>
+            <span class="divider center"></span>            
             <div class="workMainContainer">
                 <div class="screenshotsContainer">
                     <img class="workpic" src="./assets/AppOnFeet1.png" alt="">
@@ -129,7 +128,7 @@
                 </div>
                 <p class="workcontent">App On My Feet is desgined to help and support the runners from <a href="https://nyc.backonmyfeet.org" target="blank">BACK ON MY FEET</a>. A non-profit running organization that helps restore confidence and self esteem amongst the homeless and uses running as a cataylst. The main idea of this App is to help the program manager as well as the members to log and track the progress on their weekly runs, miles covered and the areas they ran in. Stack used (EJS, JS, Node/Express, PSQL, Google Geocoding API, Leaflet Library for Map markers)</p>
             </div>
-            <hr>
+            <span class="divider center"></span>            
             <div class="workMainContainer">
                 <div class="screenshotsContainer">
                     <img class="workpic" src="./assets/code2.png" alt="">
@@ -145,7 +144,7 @@
                 </div>
                 <p class="workcontent">Code Share is a platform that provide Groups an ability to code together without being together in one place. The app has an option to work on coding challenges which include TESTS or to work/share individual code collabratively. Users can also save the writen code in a JS format for their reference. The app provides a CODE EDITOR sourced from another NPM PACKAGE CODEMIRROR. The app also provides a feature where USERS can find coding events based on the USER input language. USERS will also be able to create their own events. These events are viewable by all USERS. The app has a feature for AUTHS thus enabling the USERS to create a unique profile. Stack used (EJS, JS, Node/Express, PSQL, Google Geocoding API, Leaflet Library for Map markers)</p>
             </div>
-            <hr>
+            <span class="divider center"></span>            
             <div class="workMainContainer">
                 <div class="screenshotsContainer">
                     <img class="workpic" src="./assets/tictac1.png" alt="">
@@ -161,13 +160,12 @@
                 </div>
                     <p class="workcontent">Simple Tic Tac Toe inspired by some old and pure Vanilla JS</p>
             </div>
-            <hr>
         </div>
         <div class="contact">
             <div class="center">
                 <h1 class="contactheading">Get In Touch</h1>
-                <span class="divider center"></span>
                 <p class="contact-desc">Have a sweet project in mind or just want to say hello? Feel free to send me a message below!</p>
+                <span class="divider center"></span>
             </div>
             <div class="contact-wrapper">
                 <form id="contactform" class="form-wrapper" method="POST" autocomplete="off" action="https://formspree.io/ashershaheen@gmail.com">
@@ -191,7 +189,8 @@
                     <button type="submit" name="submit" class="message-btn"> <span>Send Message</span> </button>
                 </form>
             </div>
-
+        </div>
+    
         <script src="./src/jquery.js"></script>
         <script src="./src/nav.js"></script>
     </body>
