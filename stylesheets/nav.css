@@ -2,7 +2,7 @@
   position: fixed;
   max-height: 70px;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
   padding-top: 17px;
   background: none;
   overflow: hidden;
@@ -16,12 +16,14 @@
 @media only screen and (max-width: 766px) {
   .main_h {
     padding-top: 25px;
+    width: 100vw;  
   }
 }
 
 .open-nav {
   max-height: 400px !important;
 }
+
 .open-nav .mobile-toggle {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -34,32 +36,18 @@
   border-bottom: 1px solid gainsboro;
 }
 
-.logo {
-  width: 50px;
-  font-size: 25px;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  float: left;
-  display: block;
-  margin-top: 0;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-@media only screen and (max-width: 766px) {
-  .logo {
-    float: none;
-  }
-}
-
 nav {
   float: right;
   width: 60%;
 }
+
+
 @media only screen and (max-width: 766px) {
   nav {
-    width: 100%;
+    width: 100vw;
   }
 }
+
 nav ul {
   list-style: none;
   overflow: hidden;
@@ -72,7 +60,7 @@ nav ul {
     margin-bottom: 22px;
     float: left;
     text-align: center;
-    width: 100%;
+    width: 100vw;
   }
 
 }
@@ -96,9 +84,9 @@ nav ul li {
 
 @media only screen and (max-width: 766px) {
   .mypic  {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
+    height: 100px !important;
+    width: 100px !important;
+    border-radius: 50px !important;
   }
 }
 
@@ -153,10 +141,12 @@ nav ul a:hover  {
 
 body {
   color: #8f8f8f;
-  background: white;
+  background: black;
   font-family: "Montserrat", sans-serif;  
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+  width: 100% !important;
+  margin: 0;
 }
 
 a {
@@ -195,6 +185,7 @@ p {
   padding-top: 110px;
   /* min-height: 800px; */
   height: 100vh;
+  width: 100vw;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
@@ -268,7 +259,7 @@ p {
 }
 
 .section1  {
-  background-color: rgba(255, 255, 255, 0.93);
+  /* background-color: rgba(255, 255, 255, 0.93); */
   height: 700px;
   
 }
@@ -466,7 +457,9 @@ p {
 }
 
 .workMainContainer  {
-  margin: 2%;
+  /* margin: 2%; */
+  padding: 2%;
+  /* background-color: silver; */
 }
 
 .workpic  {
@@ -508,9 +501,8 @@ p {
   width: 100%;
   height: auto;
   min-height: 700px;
-  padding: 0;
+  padding: 2%;
   overflow: hidden;
-  /* color: #f2f2f2; */
   position: relative;
 }
 
@@ -522,6 +514,7 @@ p {
 
 .contactheading  {
   font-size: 3em;
+  background: linear-gradient(rgba(194, 79, 3, 0.94), rgba(0, 0, 0, 0.5));
   
 }
 
@@ -659,5 +652,31 @@ textarea {
   position: relative;
   overflow: hidden;
   transition: all .3s ease;
+}
+
+.message-btn:hover  {
+  background: rgba(194, 79, 3, 0.94);
+  color: white;
+}
+
+
+@media only screen and (max-width: 766px) {
+  p  {
+    font-size: .7em !important;
+  }
+
+  .hero h1 span {
+    font-size: 40px;
+  }
+
+  body {
+    width: 100vw;
+    margin: 0px;
+  }
+
+  html  {
+    width: 100vw;
+    margin: 0;
+  }
 }
 
