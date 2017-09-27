@@ -492,13 +492,33 @@ p {
   font-style: italic;
 }
 
+.used  {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.used-item  {
+  display: inline-block;
+  padding: 7px 7px 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: rgba(194, 79, 3, 0.94);
+  background: #333;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
 /* -_-_-_-_-_-_-_-_-_-_-_-_-CONTACT ME PAGE SETTINGS -_-_-_-_-_-_-_-_-_-_- */
 
 .contact  {
   width: 100%;
   height: auto;
   min-height: 700px;
-  padding: 2%;
+  /* padding: 2%; */
   overflow: hidden;
   position: relative;
 }
@@ -721,7 +741,6 @@ textarea {
 .myfooter .copyright-wrapper {
   margin-top: 25px;
   font-size: 13px;
-  /* color: #f2f2f2; */
   font-weight: 500;
 }
 
