@@ -711,6 +711,7 @@ input  {
   border-style: inset;
   border-color: initial;
   border-image: initial;
+  color: #8f8f8f;
 }
 
 textarea {
@@ -728,6 +729,7 @@ textarea {
   border-color: initial;
   border-image: initial;
   padding: 2px;
+  color: #8f8f8f;
 }
 
 .message-btn  {
