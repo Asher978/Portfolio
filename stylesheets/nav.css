@@ -180,7 +180,7 @@ ul  {
 
 .hero {
   position: relative;
-  background: #333 url(../assets/ash.jpg) no-repeat center center fixed;
+  background: url(../assets/ash.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -190,18 +190,8 @@ ul  {
   height: 100vh;
   width: 100vw;
   letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px)  {
-  .hero {
-    background: #333 url(../assets/ash.jpg) no-repeat center center fixed;
-    background-size: contain; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-  }
-  
-}
 .hero h1 {
   font-size: 30px;
   line-height: 1.3;
@@ -212,6 +202,30 @@ ul  {
   border-bottom: 2px solid #e8f380;
   padding-bottom: 12px;
   line-height: 3;
+}
+
+
+@media only screen and (max-device-width: 750px) {  
+  .hero {
+    background: url(../assets/ash.jpg) no-repeat;
+    -moz-background-size: 400px auto !important;
+    -webkit-background-size: 400px auto !important;
+    background-size: 400px auto !important;
+    background-position:fixed;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  
+  }
+
+  .hero h1  {
+    font-size: 25px;
+  }
+
+  .mypic  {
+    display: none;
+  }
+  
 }
 
 .mouse {
@@ -268,6 +282,12 @@ ul  {
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
     transform: translateY(20px);
+  }
+}
+
+@media only screen and (max-device-width: 750px) {  
+  .mouse  {
+    display: none;
   }
 }
 
@@ -374,24 +394,26 @@ ul  {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: auto;
-  min-height: 950px;
+  /* min-height: 950px; */
   padding: 0;
   overflow: hidden;
 }
 
 .skills-wrapper  {
   padding: 100px;
+  height: auto;
 }
 
 
 .skills-flex-wrapper  {
   display: flex;
   font: 100 30px;
-  height: 17em;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+  height: auto;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .flex-item  {
@@ -410,7 +432,7 @@ ul  {
 
 @media only screen and (max-width: 1000px) {
   .flex-item:nth-child(1) {
-    width: 45%;
+    width: auto;
   }
 
 }
@@ -419,7 +441,7 @@ ul  {
   font-family: Gotham,Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 1em;
 }
 
 .sprite  {
@@ -458,13 +480,26 @@ ul  {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1000px) {
   .dev-item {
     width: 80px;
     height: 80px;
-    font-size: 12px;
-    line-height: 5.5;
+    font-size: 11px;
+    line-height: 7;
     margin: 5px 5px 5px 0;
+  }
+  .skills-heading  {
+    margin-left: 15%;
+    margin-bottom: 10%;
+  }
+
+  .skills-wrapper  {
+    padding: 0;
+  }
+
+  .content {
+    padding: 0px 6% 29px;
+    text-align: center;
   }
 }
 
@@ -582,7 +617,8 @@ ul  {
 .used  {
   display: block;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  margin-left: -10px;
 }
 
 .used-item  {
@@ -604,8 +640,7 @@ ul  {
 .contact  {
   width: 100%;
   height: auto;
-  min-height: 700px;
-  /* padding: 2%; */
+  /* min-height: 700px; */
   overflow: hidden;
   position: relative;
 }
@@ -621,6 +656,7 @@ ul  {
   background: linear-gradient(rgba(194, 79, 3, 0.94), rgba(0, 0, 0, 0.5));
   text-align: center;
   margin-top: 0;
+  border-radius: 10px;
   
 }
 
@@ -774,10 +810,49 @@ textarea {
   }
 
   .hero h1 span {
-    font-size: 40px;
+    font-size: 30px;
   }
 
-  body {
+  .title  {
+  font-size: 1em;  
+  }
+
+  .buttondiv a {
+    padding: 4px 10px;
+    font-size: .8em;
+    font-weight: 600;
+  }
+
+  .myworkbuttons {
+    margin-top: 8%
+  }
+
+  .contactheading  {
+    font-size: 2em;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+    padding-left: 8%;
+  }
+
+  .message-btn  {
+    padding: 8px 9px 8px;
+    margin: 44px 0 0 90px;
+    font-size: 12px;
+  }
+
+  #me h1  {
+    display: none;
+  }
+
+  .used  {
+    display: block;
+    margin-top: 30px;
+    margin-left: -31px;
+  }
+
+  /* body {
     width: 100vw;
     margin: 0px;
   }
@@ -785,7 +860,7 @@ textarea {
   html  {
     width: 100vw;
     margin: 0;
-  }
+  } */
 }
 
 /* -_-_-_-_-_-_-_-_-_-_-_-_-FOOTER PAGE SETTINGS -_-_-_-_-_-_-_-_-_-_- */
